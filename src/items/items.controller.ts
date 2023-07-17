@@ -39,4 +39,5 @@ export class ItemsController {
   async remove(@Param('id') id: string) {
     return this.itemsService.remove(+id);
   }
+  
 }
