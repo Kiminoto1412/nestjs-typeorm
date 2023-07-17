@@ -1,0 +1,12 @@
+services:
+ mysql:
+  image: mysql
+  env_file:
+    - .env
+  ports:
+  # 3307 is port of mysql
+  # 3306 is port on local machine that we want to bind
+    - "3307:3306"
+
+
+    # docker compose up => to run docker-compose file
